@@ -8,6 +8,9 @@ An end-to-end Machine Learning web application that utilizes an ensemble Random 
 * **API-Driven Architecture:** Exposes machine learning predictions via an asynchronous Flask server interacting natively with raw user frontend payloads.
 * **Dynamic Frontend Visualizations:** Animates data distributions and model certainty indices using custom CSS progress meters based on API telemetry inputs.
 
+## **Made By**
+Vishwa Chokshi
+
 ## 📂 Project Architecture
 ```
 space-ml-engine/
@@ -31,5 +34,4 @@ space-ml-engine/
 ├── app.py                 # Flask app server bridge
 └── train.py               # Model generation script ```
 
-## **Made By**
-Vishwa Chokshi
+
