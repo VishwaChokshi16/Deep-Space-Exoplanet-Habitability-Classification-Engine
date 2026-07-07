@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exoplanet Habitability Lab</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌌 Deep-Space Exoplanet Analytics Engine</h1>
+            <p>Input deep-space planetary telescope metrics to calculate habitability candidates via our machine learning model.</p>
+        </header>
+
+        <div class="main-layout">
+            <section class="form-panel">
+                <h2>🔭 Telemetry Parameters</h2>
+                <form id="telemetry-form">
+                    <div class="input-group">
+                        <label>Distance from Star (AU):</label>
+                        <input type="number" id="distance" step="0.01" value="1.0" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Planet Mass (Earths):</label>
+                        <input type="number" id="mass" step="0.01" value="1.0" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Stellar Luminosity (Suns):</label>
+                        <input type="number" id="luminosity" step="0.01" value="1.0" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Greenhouse Factor:</label>
+                        <input type="number" id="greenhouse" step="0.01" value="1.0" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Analyze Exoplanet</button>
+                </form>
+            </section>
+
+            <section class="results-panel">
+                <h2>📊 Analysis Visualizations</h2>
+                <div id="welcome-message" class="info-msg">Awaiting deep-space metrics stream inputs...</div>
+                
+                <div id="results-display" class="hidden">
+                    <div id="status-badge" class="badge"></div>
+                    
+                    <div class="visualization-box">
+                        <h3>Habitability Probability Index</h3>
+                        <div class="progress-container">
+                            <div id="probability-bar" class="progress-bar"></div>
+                        </div>
+                        <p id="probability-text">0.00%</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../static/app.js"></script>
+</body>
+</html>
