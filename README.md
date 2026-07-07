@@ -9,7 +9,7 @@ An end-to-end Machine Learning web application that utilizes an ensemble Random 
 * **Dynamic Frontend Visualizations:** Animates data distributions and model certainty indices using custom CSS progress meters based on API telemetry inputs.
 
 ## 📂 Project Architecture
-```text
+```
 space-ml-engine/
 │
 ├── artifacts/             # Serialized model binaries (Hidden via .gitignore)
@@ -29,4 +29,7 @@ space-ml-engine/
 │
 ├── requirements.txt       # Unified package list
 ├── app.py                 # Flask app server bridge
-└── train.py               # Model generation script
+└── train.py               # Model generation script ```
+
+## **Made By**
+Vishwa Chokshi
